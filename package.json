@@ -1,6 +1,6 @@
 {
   "name": "@lffg-scripts/rm-pg-dbs",
-  "description": "Remove PostgreSQL databases—in bulk, as you select.",
+  "description": "Drop PostgreSQL databases—in bulk, as you select.",
   "bin": {
     "rm-pg-dbs": "src/index.js",
     "lffg--rm-pg-dbs": "src/index.js"

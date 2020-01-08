@@ -1,6 +1,6 @@
 # `rm-pg-dbs`
 
-Remove PostgreSQL databases—in bulk, **as you select**.
+Drop PostgreSQL databases—in bulk, **as you select**.
 
 ```
 yarn add @lffg-scripts/rm-pg-dbs

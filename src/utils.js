@@ -16,16 +16,16 @@ function format(values) {
   }).format(values);
 }
 
-function showFeedback(database, deleted, message = null) {
+function showFeedback(database, dropped, message = null) {
   const messages = {
-    true: `Successfully deleted the "${database}" database.`,
+    true: `Successfully dropped the "${database}" database.`,
     false: [
       `Something went wrong while deleting the "${database}" database.`,
       `  ${chalk.gray(message)}`
     ].join('\n')
   };
 
-  console.log(messages[!!deleted]);
+  console.log(messages[!!dropped]);
 }
 
 module.exports = {

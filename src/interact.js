@@ -32,7 +32,7 @@ async function promptForDatabases(databases) {
   const selected = await prompt({
     name: 'databases',
     type: 'multiselect',
-    message: 'Which databases you want to remove?',
+    message: 'Which databases you want to drop?',
     instructions: false,
     choices
   });
@@ -46,7 +46,7 @@ async function confirmDeletion(selectedDatabases) {
   const { bool } = await prompt({
     type: 'confirm',
     name: 'bool',
-    message: chalk`Are you sure you want to {underline DELETE} the following databases? ${formatted}`,
+    message: chalk`Are you sure you want to {underline DROP} the following databases? ${formatted}`,
     initial: false
   });
 
@@ -55,8 +55,8 @@ async function confirmDeletion(selectedDatabases) {
 
 function report({ results, totalCount, errorCount, successCount }) {
   const resultMessages = map(
-    ([database, deleted, error]) =>
-      deleted
+    ([database, dropped, error]) =>
+      dropped
         ? chalk`{green ✔} ${database}`
         : chalk`{red ✖} ${database}: {gray ${error}}`,
     results

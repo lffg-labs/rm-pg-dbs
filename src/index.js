@@ -35,7 +35,7 @@ async function main() {
     map(dropDatabaseAndNotify, selectedDatabases)
   );
 
-  const errors = filter(([, deleted]) => !deleted)(resolvedPromises);
+  const errors = filter(([, dropped]) => !dropped)(resolvedPromises);
 
   const totalCount = resolvedPromises.length;
   const errorCount = errors.length;
