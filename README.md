@@ -15,6 +15,8 @@ And run it via:
 rm-pg-dbs
 ```
 
+Be default, this CLI will connect to the `localhost:5432` PostgreSQL database as `postgres` user with `postgres` password.
+
 You can override the default connection options with the following environment variables:
 
 - `PG_HOST`;
