@@ -2,11 +2,13 @@ const chalk = require('chalk');
 const { curry } = require('ramda');
 
 function prettifyDatabaseName(quoted, database) {
+  const fmt = 'cyan';
+
   if (quoted) {
-    return chalk`"{underline ${database}}"`;
+    return chalk`"{${fmt} ${database}}"`;
   }
 
-  return chalk`{underline ${database}}`;
+  return chalk`{${fmt} ${database}}`;
 }
 
 function format(values) {
