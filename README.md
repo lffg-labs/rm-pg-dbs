@@ -1,4 +1,6 @@
-# `rm-pg-dbs`
+# 🐘 `rm-pg-dbs`
+
+[![NPM](https://img.shields.io/npm/v/@lffg-scripts/rm-pg-dbs.svg?logo=npm)](https://www.npmjs.com/package/@lffg-scripts/rm-pg-dbs)
 
 Drop PostgreSQL databases—in bulk, **as you select**.
 
