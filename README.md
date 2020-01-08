@@ -2,7 +2,8 @@
 
 [![NPM](https://img.shields.io/npm/v/@lffg-scripts/rm-pg-dbs.svg?logo=npm)](https://www.npmjs.com/package/@lffg-scripts/rm-pg-dbs)
 
-Drop PostgreSQL databases—in bulk, **as you select**.
+Drop PostgreSQL databases—in bulk, **as you select**.  
+[Watch an introduction video here.](https://www.youtube.com/watch?v=9qz3EuNMDfU)
 
 ```
 yarn global add @lffg-scripts/rm-pg-dbs
