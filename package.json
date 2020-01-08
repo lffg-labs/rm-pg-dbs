@@ -5,7 +5,7 @@
     "rm-pg-dbs": "src/index.js",
     "lffg--rm-pg-dbs": "src/index.js"
   },
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "src/index.js",
   "license": "MIT",
   "repository": "https://github.com/lffg/rm-pg-dbs",
