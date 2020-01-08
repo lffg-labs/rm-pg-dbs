@@ -5,7 +5,7 @@
     "rm-pg-dbs": "src/cli.js",
     "lffg--rm-pg-dbs": "src/cli.js"
   },
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "src/index.js",
   "license": "MIT",
   "repository": "https://github.com/lffg/rm-pg-dbs",
