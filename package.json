@@ -2,16 +2,16 @@
   "name": "@lffg-scripts/rm-pg-dbs",
   "description": "Drop PostgreSQL databases—in bulk, as you select.",
   "bin": {
-    "rm-pg-dbs": "src/index.js",
-    "lffg--rm-pg-dbs": "src/index.js"
+    "rm-pg-dbs": "src/cli.js",
+    "lffg--rm-pg-dbs": "src/cli.js"
   },
   "version": "1.0.0",
   "main": "src/index.js",
   "license": "MIT",
   "repository": "https://github.com/lffg/rm-pg-dbs",
   "scripts": {
-    "dev": "NODE_ENV=development node src",
-    "start": "NODE_ENV=production node src"
+    "dev": "NODE_ENV=development node src/cli",
+    "start": "NODE_ENV=production node src/cli"
   },
   "dependencies": {
     "@types/prompts": "^2.0.3",

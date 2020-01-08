@@ -1,7 +1,3 @@
-if (!process.env.NODE_ENV) {
-  process.env.NODE_ENV = 'production';
-}
-
 const { pipe, then, tap, map, filter } = require('ramda');
 const { selectDatabases, dropDatabase } = require('./db');
 const {
@@ -13,7 +9,7 @@ const {
 } = require('./interact');
 const { showFeedback } = require('./utils');
 
-async function main() {
+async function run() {
   const databases = await selectDatabases();
   const selectedDatabases = await promptForDatabases(databases);
 
@@ -49,6 +45,6 @@ async function main() {
   });
 }
 
-main()
-  .then(() => process.exit(0))
-  .catch((error) => console.error(error) || process.exit(1));
+module.exports = {
+  run
+};
