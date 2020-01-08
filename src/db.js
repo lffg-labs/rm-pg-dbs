@@ -24,7 +24,7 @@ async function selectDatabases() {
 async function dropDatabase(database) {
   try {
     if (process.env.NODE_ENV === 'production') {
-      await query(`DROP DATABASE ${database};`);
+      await query(`DROP DATABASE "${database}";`);
     } else {
       await wait(Math.random() * 1000);
     }
