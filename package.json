@@ -1,0 +1,27 @@
+{
+  "name": "@lffg-scripts/rm-pg-dbs",
+  "bin": {
+    "rm-pg-dbs": "src/index.js",
+    "lffg--rm-pg-dbs": "src/index.js"
+  },
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development node src",
+    "start": "NODE_ENV=production node src"
+  },
+  "dependencies": {
+    "@types/prompts": "^2.0.3",
+    "chalk": "^3.0.0",
+    "pg": "^7.17.0",
+    "prompts": "^2.3.0",
+    "ramda": "^0.26.1",
+    "waait": "^1.0.5"
+  },
+  "devDependencies": {
+    "@types/ramda": "^0.26.39",
+    "eslint": "^6.8.0",
+    "eslint-config-lffg": "^10.0.1"
+  }
+}
