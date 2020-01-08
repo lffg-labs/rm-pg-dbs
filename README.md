@@ -3,7 +3,7 @@
 Drop PostgreSQL databases—in bulk, **as you select**.
 
 ```
-yarn add @lffg-scripts/rm-pg-dbs
+yarn global add @lffg-scripts/rm-pg-dbs
 ```
 
 And run it via:
