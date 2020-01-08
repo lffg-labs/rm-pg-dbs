@@ -19,7 +19,7 @@ You can override the default connection options with the following environment v
 - `PG_USER`;
 - `PG_PASSWORD`.
 
-You can also use the `ALLOW_ANY_DROP` environment variable to enable the deletion of the `postgres`, `<your-os-username>`, `template1` and `template0` databases.
+You can set the `ALLOW_ANY_DROP` environment variable to `true` to enable the deletion of the `postgres`, `<your-os-username>`, `template1` and `template0` databases, which are filtered out of the selection list by default.
 
 ---
 
