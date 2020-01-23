@@ -15,16 +15,17 @@ And run it via:
 rm-pg-dbs
 ```
 
-Be default, this CLI will connect to the `localhost:5432` PostgreSQL database as `postgres` user with `postgres` password.
+Be default, this CLI will connect to the `localhost:5432` PostgreSQL database as `postgres` user with `postgres` password. The default database which will be connected is `postgres`.
 
 You can override the default connection options with the following environment variables:
 
-- `PG_HOST`;
-- `PG_PORT`;
-- `PG_USER`;
-- `PG_PASSWORD`.
+- `PGHOST`;
+- `PGPORT`;
+- `PGUSER`;
+- `PGPASSWORD`;
+- `PGDATABASE`.
 
-You can set the `ALLOW_ANY_DROP` environment variable to `true` to enable the deletion of the `postgres`, `<your-os-username>`, `template1` and `template0` databases, which are filtered out of the selection list by default.
+You can set the `ALLOW_ANY_DROP` environment variable to `true` to enable the deletion of the `postgres`, `<your-os-username>`, `template1` and `template0` databases, which are filtered out of the selection list by default. You should not do this, though.
 
 ---
 
