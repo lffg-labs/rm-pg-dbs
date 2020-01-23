@@ -11,7 +11,8 @@
   "repository": "https://github.com/lffg/rm-pg-dbs",
   "scripts": {
     "dev": "NODE_ENV=development node src/cli",
-    "start": "NODE_ENV=production node src/cli"
+    "start": "NODE_ENV=production node src/cli",
+    "test": "#"
   },
   "dependencies": {
     "@types/prompts": "^2.0.3",
