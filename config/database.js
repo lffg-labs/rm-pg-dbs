@@ -1,7 +1,7 @@
 const host = process.env.PGHOST || 'localhost';
 const port = process.env.PGPORT || 5432;
 const user = process.env.PGUSER || 'postgres';
-const password = process.env.PGPASSWORD || 'postgres'
+const password = process.env.PGPASSWORD || 'postgres';
 const database = process.env.PGDATABASE || user;
 
 module.exports = {
